@@ -1,0 +1,303 @@
+/* Example animation */
+.animated-element {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+/* AOS classes */
+.animated-element[data-aos='fade-up'] {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.animated-element[data-aos='fade-up'].aos-init {
+  opacity: 1; /* Show element after animation */
+}
+
+/* Custom CSS */
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #adf6e5;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #cc4848;
+  color: white;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.bgimage{
+  
+    background-image: url(flaskblog/static/images/dmclog.jpg);
+    background-size: 150px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    color: pink;
+  }
+
+.container {
+  background-color: #670f0f;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+
+}
+
+h2, h3, td {
+  color: #ffffff;
+}
+h5 .card-title1 {
+  color: #2f1414; 
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: rgb(209, 180, 180);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+.window {
+  background-color: #8cffa0;
+  columns: 5;
+  widows: 5;
+}
+.card {
+  background-color: #9b2828;
+  box-shadow: 0 4px 8px 0 rgba(227, 216, 216, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  text-decoration-color: rgb(74, 150, 222);
+}
+.card-text {
+  color: #070000;
+
+}
+.multi-bg{
+  width: 100%;
+  height: 75%;
+  background-image: url(klas1.jpg), url(dmc2.jpg),
+    linear-gradient(to right, rgb(30 75 115 / 100%), rgb(255 255 255 / 0%));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:
+    bottom right,
+    left,
+    right;
+}
+
+.card-title1{
+  color: #070000;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .card {
+      margin-bottom: 20px;
+  }
+}
+
+/* AOS Custom Animations */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-in"] {
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
+
+[data-aos="fade-in"].aos-animate {
+  opacity: 1;
+}
+
+/* Background image divs */
+.bg-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Adjust based on your need */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(177, 160, 160, 0.7);
+}
+.multi-bg-example {
+  width: 100%;
+  height: 400px;
+  background-image: url(firefox.png), url(bubbles.png),
+    linear-gradient(to right, rgb(30 75 115 / 100%), rgb(255 255 255 / 0%));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:
+    bottom right,
+    left,
+    right;
+}
+/* Default heading styles for the card title */
+.card h2 {
+  font-size: 1em;
+}
+
+/* If the container is larger than 700px */
+@container (min-width: 700px) {
+  .card h2 {
+    font-size: 2em;
+  }
+}
+
+
+.box {
+  display: flex;
+}
+
+
+
+.div {
+  background-color: #8cffa0;
+  columns: 3;
+  widows: 2;
+}
+.red-text-shadow {
+  text-shadow: red 0 -2px;
+}
+
+.p {
+  background-color: #8ca0ff;
+}
+
+.p:first-child {
+  margin-top: 0;
+}
+/* use small-cap alternate glyphs */
+.smallcaps {
+  font-feature-settings: "smcp" on;
+}
+
+/* convert both upper and lowercase to small caps (affects punctuation also) */
+.allsmallcaps {
+  font-feature-settings: "c2sc", "smcp";
+}
+
+/* use zeros with a slash through them to differentiate from "O" */
+.nicezero {
+  font-feature-settings: "zero";
+}
+
+/* enable historical forms */
+.hist {
+  font-feature-settings: "hist";
+}
+
+/* disable common ligatures, usually on by default */
+.noligs {
+  font-feature-settings: "liga" 0;
+}
+
+/* enable tabular (monospaced) figures */
+td.tabular {
+  font-feature-settings: "tnum";
+}
+
+/* enable automatic fractions */
+.fractions {
+  font-feature-settings: "frac";
+}
+
+/* use the second available swash character */
+.swash {
+  font-feature-settings: "swsh" 2;
+}
+
+/* enable stylistic set 7 */
+.fancystyle {
+  font-family: Gabriola;
+  font-feature-settings: "ss07";
+}
+@font-face {
+  src: url("AmstelvarAlpha-VF.ttf");
+  font-family: "Amstelvar";
+  font-style: normal;
+}
+
+p {
+  font-size: 14px;
+  font-family: Amstelvar;
+}
+
+.no-optical-sizing {
+  font-optical-sizing: none;
+}
+code {
+  white-space: pre;
+}
+
+#map {
+  height: 150vh;
+  width: 70vw;
+  background: linear-gradient(blue, green);
+  touch-action: none;
+}
+#form {
+  background: linear-gradient(blue, green);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
